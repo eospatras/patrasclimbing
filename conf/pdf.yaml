@@ -1,0 +1,30 @@
+filters:
+- pandoc-xnos
+- pandoc-plot
+
+metadata:
+  title: Πάτρα - Αναρριχητικός Οδηγός
+  author: ΕΟΣ Πατρών
+
+
+file-scope: false # Parse each file individually before combining for multifile documents. This will allow footnotes in different files with the same identifiers to work as expected. If this option is set, footnotes and links will not work across files.
+from: markdown
+input-files: [conf/0-frontmatter.md, 'Αλεποχώρι-Σπαρτιά/Αλεποχώρι-Σπαρτιά.md', 'Καλόγρια/Καλόγρια.md', 'Κλεισούρα/Κλεισούρα.md', 'Πόρτες (Νεραϊδότρυπα)/Πόρτες (Νεραϊδότρυπα).md', 'Χατζούρι/Χατζούρι.md']
+resource-path: ['Αλεποχώρι-Σπαρτιά', 'Καλόγρια', 'Κλεισούρα', 'Πόρτες (Νεραϊδότρυπα)', 'Χατζούρι']
+output-file: output/patras-climbing-guide.pdf
+log-file: log/pdf.log.json
+
+reference-location: block # block, section, or document
+standalone: true
+to: pdf
+pdf-engine: xelatex
+top-level-division: chapter # default|chapter|section|part
+toc: true
+
+
+
+template: templates/eisvogel.tex
+
+
+verbosity: WARNING # ERROR, WARNING, or INFO
+highlight-style: tango

@@ -1,0 +1,6 @@
+format: SVG
+directory: .
+source: false
+matplotlib:
+  tight_bbox: false
+  transparent: false
