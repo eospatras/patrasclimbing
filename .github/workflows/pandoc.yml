@@ -1,0 +1,47 @@
+name: Pandoc
+
+on: push
+    tags-ignore:
+      - 'not-release'
+jobs:
+  convert_via_pandoc:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Create pdf
+        id: create-pdf
+        uses: docker://sintoris/texlive:routes
+        with:
+          args: >-
+            --defaults=conf/pdf.yaml
+            -N -f markdown-implicit_figures
+      - name: Create html
+        id: create-html
+        uses: docker://sintoris/texlive:routes
+        with:
+          args: >-
+            --defaults=conf/html.yaml
+            -N -f markdown-implicit_figures
+
+
+      - uses: cb80/delrel@latest
+        with:
+          tag: "Latest"
+
+      - uses: actions/upload-artifact@v2
+        with:
+          name: Patras_Climbing_Guide.pdf
+          path: output/Patras_Climbing_Guide.pdf
+
+      - name: Upload binaries to release (all)
+        uses: svenstaro/upload-release-action@2.2.1
+        with:
+          repo_token: ${{ secrets.GITHUB_TOKEN }}
+          file: output/*
+          file_glob: true
+          tag: "Latest"
+          overwrite: true
+          body: ${{github.run_number}}
+
+
