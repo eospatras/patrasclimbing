@@ -1,8 +1,9 @@
 name: Pandoc
 
 on: push
-    tags-ignore:
-      - 'not-release'
+    # tags-ignore:
+    #   - 'not-release'
+
 jobs:
   convert_via_pandoc:
     runs-on: ubuntu-latest
