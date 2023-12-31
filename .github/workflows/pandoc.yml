@@ -33,7 +33,7 @@ jobs:
       - uses: actions/upload-artifact@v2
         with:
           name: Patras_Climbing_Guide.pdf
-          path: output/Patras_Climbing_Guide.pdf
+          path: output/patras-climbing-guide.pdf
 
       - name: Upload binaries to release (all)
         uses: svenstaro/upload-release-action@2.2.1
