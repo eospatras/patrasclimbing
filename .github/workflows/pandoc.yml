@@ -10,16 +10,16 @@ jobs:
     steps:
       - uses: actions/checkout@v2
 
-      - name: Create output directory
-        run: mkdir -p output/
+      # - name: Create output directory
+      #   run: mkdir -p output/
 
-      - name: Create pdf
-        id: create-pdf
-        uses: docker://sintoris/texlive:routes
-        with:
-          args: >-
-            --defaults=conf/pdf.yaml
-            -N -f markdown-implicit_figures
+      # - name: Create pdf
+      #   id: create-pdf
+      #   uses: docker://sintoris/texlive:routes
+      #   with:
+      #     args: >-
+      #       --defaults=conf/pdf.yaml
+      #       -N -f markdown-implicit_figures
             
       - name: Create html
         id: create-html
@@ -30,24 +30,28 @@ jobs:
             -N -f markdown-implicit_figures
 
 
-      # - uses: cb80/delrel@latest
+      # # - uses: cb80/delrel@latest
+      # #   with:
+      # #     tag: "Latest"
+
+      # # - uses: actions/upload-artifact@v2
+      # #   with:
+      # #     name: Patras_Climbing_Guide.pdf
+      # #     path: output/patras-climbing-guide.pdf
+
+      # - name: Upload binaries to release (all)
+      #   uses: svenstaro/upload-release-action@2.2.1
       #   with:
+      #     repo_token: ${{ secrets.GITHUB_TOKEN }}
+      #     file: output/*
+      #     file_glob: true
       #     tag: "Latest"
+      #     overwrite: true
+      #     body: ${{github.run_number}}
 
-      # - uses: actions/upload-artifact@v2
-      #   with:
-      #     name: Patras_Climbing_Guide.pdf
-      #     path: output/patras-climbing-guide.pdf
+      - name: Create output directory
+        run: mkdir -p output/html
 
-      - name: Upload binaries to release (all)
-        uses: svenstaro/upload-release-action@2.2.1
-        with:
-          repo_token: ${{ secrets.GITHUB_TOKEN }}
-          file: output/*
-          file_glob: true
-          tag: "Latest"
-          overwrite: true
-          body: ${{github.run_number}}
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
