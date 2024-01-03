@@ -14,11 +14,13 @@ jobs:
         run: mkdir -p output/
 
       - name: Create pdf
-        run: |
-          docker run --rm -v ${{ github.workspace }}:/pandoc sintoris/texlive:routes --defaults=conf/pdf.yaml -N -f markdown-implicit_figures -o output/patras-climbing-guide.pdf
-     
-      - name: List output directory
-        run: ls -l output/
+        id: create-pdf
+        uses: docker://sintoris/texlive:routes
+        with:
+          args: >-
+            --defaults=conf/pdf.yaml
+            -N -f markdown-implicit_figures
+            
       # - name: Create html
       #   id: create-html
       #   uses: docker://sintoris/texlive:routes
