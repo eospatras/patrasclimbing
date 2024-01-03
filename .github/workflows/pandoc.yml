@@ -16,7 +16,9 @@ jobs:
         with:
           args: >-
             --defaults=conf/pdf.yaml -N -f markdown-implicit_figures --verbose
-
+          volumes:
+            - .:/pandoc
+     
       - name: List output directory
         run: ls -l output/
       # - name: Create html
