@@ -15,8 +15,7 @@ jobs:
         uses: docker://sintoris/texlive:routes
         with:
           args: >-
-            --defaults=conf/pdf.yaml
-            -N -f markdown-implicit_figures
+            --defaults=conf/pdf.yaml -N -f markdown-implicit_figures --verbose
 
       - name: List output directory
         run: ls -l output/
