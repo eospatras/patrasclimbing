@@ -17,6 +17,9 @@ jobs:
           args: >-
             --defaults=conf/pdf.yaml
             -N -f markdown-implicit_figures
+
+      - name: List output directory
+        run: ls -l output/
       # - name: Create html
       #   id: create-html
       #   uses: docker://sintoris/texlive:routes
