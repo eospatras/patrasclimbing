@@ -12,8 +12,7 @@ jobs:
 
       - name: Create pdf
         run: |
-          docker run --rm -v ${{ github.workspace }}:/pandoc sintoris/texlive:routes --defaults=conf/pdf.yaml -N -f markdown-implicit_figures --verbose
-          
+          docker run --rm -v ${{ github.workspace }}:/pandoc sintoris/texlive:routes --defaults=conf/pdf.yaml -N -f markdown-implicit_figures -o /pandoc/output/patras-climbing-guide.pdf
      
       - name: List output directory
         run: ls -l output/
