@@ -20,6 +20,9 @@ jobs:
       #     args: >-
       #       --defaults=conf/pdf.yaml
       #       -N -f markdown-implicit_figures
+      
+      - name: Create output directory
+        run: mkdir -p output/html
             
       - name: Create html
         id: create-html
@@ -49,8 +52,6 @@ jobs:
       #     overwrite: true
       #     body: ${{github.run_number}}
 
-      - name: Create output directory
-        run: mkdir -p output/html
 
 
       - name: Deploy to GitHub Pages
