@@ -11,13 +11,9 @@ jobs:
       - uses: actions/checkout@v2
 
       - name: Create pdf
-        id: create-pdf
-        uses: docker://sintoris/texlive:routes
-        with:
-          args: >-
-            --defaults=conf/pdf.yaml -N -f markdown-implicit_figures --verbose
-          volumes:
-            - .:/pandoc
+        run: |
+          docker run --rm -v ${{ github.workspace }}:/pandoc sintoris/texlive:routes --defaults=conf/pdf.yaml -N -f markdown-implicit_figures --verbose
+          
      
       - name: List output directory
         run: ls -l output/
