@@ -36,7 +36,7 @@ jobs:
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
-          git add output/html/*
+          git add -f output/html/*
           git commit -m "Add generated HTML page"
           git push
 
