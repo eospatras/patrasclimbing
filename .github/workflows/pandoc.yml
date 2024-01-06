@@ -35,7 +35,7 @@ jobs:
       - name: Push to GitHub
         run: |
           mv *.svg output/html
-          rm *.src.htmls
+          rm *.src.html
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
           git add -f output/html/*
