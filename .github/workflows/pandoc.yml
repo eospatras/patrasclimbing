@@ -22,7 +22,7 @@ jobs:
       #       -N -f markdown-implicit_figures 
       
       - name: Create docs directory
-        run: mkdir -p docs/html
+        run: mkdir -p docs
             
       - name: Create html
         id: create-html
@@ -34,11 +34,16 @@ jobs:
       
       - name: Push to GitHub
         run: |
-          mv *.svg docs/html
+          mv *.svg docs
           rm *.src.html
+          cp Αλεποχώρι-Σπαρτιά/*.jpg ./docs
+          cp Καλόγρια/*.jpg ./docs
+          cp Κλεισούρα/*.jpg ./docs
+          cp "Πόρτες (Νεραϊδότρυπα)"/*.jpg ./docs
+          cp Χατζούρι/*.jpg ./docs
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
-          git add -f docs/html/*
+          git add -f docs/*
           git commit -m "Add generated HTML page"
           git push
 
@@ -46,7 +51,7 @@ jobs:
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./docs/html
+          publish_dir: ./docs
 
 
 
