@@ -19,7 +19,7 @@ jobs:
       #   with:
       #     args: >-
       #       --defaults=conf/pdf.yaml
-      #       -N -f markdown-implicit_figures
+      #       -N -f markdown-implicit_figures 
       
       - name: Create docs directory
         run: mkdir -p docs/html
