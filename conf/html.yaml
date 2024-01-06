@@ -24,7 +24,7 @@ split-level: 1
 extract-media: ""
 
 template: templates/pandoc-markdown-css-theme/theme.html5
-css: ../../templates/pandoc-markdown-css-theme/theme.css
+css: theme.css
 
 verbosity: WARNING # ERROR, WARNING, or INFO
 highlight-style: tango

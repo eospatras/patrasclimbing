@@ -41,6 +41,8 @@ jobs:
           cp Κλεισούρα/*.jpg ./docs
           cp "Πόρτες (Νεραϊδότρυπα)"/*.jpg ./docs
           cp Χατζούρι/*.jpg ./docs
+          cp templates/pandoc-markdown-css-theme/theme.css ./docs
+          cp templates/pandoc-markdown-css-theme/MonaspaceNeon-Regular.woff ./docs
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
           git add -f docs/*
