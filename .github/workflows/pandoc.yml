@@ -30,7 +30,7 @@ jobs:
         with:
           args: >-
             --defaults=conf/html.yaml
-            -N -f markdown-implicit_figures
+            -N -f markdown-implicit_figures --toc
       
       - name: Push to GitHub
         run: |
