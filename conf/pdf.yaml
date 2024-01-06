@@ -11,7 +11,7 @@ file-scope: false # Parse each file individually before combining for multifile 
 from: markdown
 input-files: [conf/0-frontmatter.md, 'Αλεποχώρι-Σπαρτιά/Αλεποχώρι-Σπαρτιά.md', 'Καλόγρια/Καλόγρια.md', 'Κλεισούρα/Κλεισούρα.md', 'Πόρτες (Νεραϊδότρυπα)/Πόρτες (Νεραϊδότρυπα).md', 'Χατζούρι/Χατζούρι.md']
 resource-path: ['Αλεποχώρι-Σπαρτιά', 'Καλόγρια', 'Κλεισούρα', 'Πόρτες (Νεραϊδότρυπα)', 'Χατζούρι']
-output-file: output/patras-climbing-guide.pdf
+output-file: docs/patras-climbing-guide.pdf
 log-file: log/pdf.log.json
 
 reference-location: block # block, section, or document
