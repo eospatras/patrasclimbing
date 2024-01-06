@@ -1,0 +1,329 @@
+[
+    {
+        "type": "LoadedResource",
+        "verbosity": "INFO",
+        "for": "templates/pandoc-markdown-css-theme/theme.html5",
+        "from": "templates/pandoc-markdown-css-theme/theme.html5"
+    },
+    {
+        "type": "LoadedResource",
+        "verbosity": "INFO",
+        "for": "pandocplot3145710587614924961.svg",
+        "from": "pandocplot3145710587614924961.svg"
+    },
+    {
+        "type": "LoadedResource",
+        "verbosity": "INFO",
+        "for": "Αλεποχώρι-οδηγίες.jpg",
+        "from": "Αλεποχώρι-Σπαρτιά/Αλεποχώρι-οδηγίες.jpg"
+    },
+    {
+        "type": "LoadedResource",
+        "verbosity": "INFO",
+        "for": "pandocplot12482402927193576115.svg",
+        "from": "pandocplot12482402927193576115.svg"
+    },
+    {
+        "type": "LoadedResource",
+        "verbosity": "INFO",
+        "for": "pandocplot7276651016992312734.svg",
+        "from": "pandocplot7276651016992312734.svg"
+    },
+    {
+        "type": "LoadedResource",
+        "verbosity": "INFO",
+        "for": "pandocplot15799597094538478126.svg",
+        "from": "pandocplot15799597094538478126.svg"
+    },
+    {
+        "type": "LoadedResource",
+        "verbosity": "INFO",
+        "for": "Αλεποχώρι-Δυτικό_ζωνάρι_πάνω.jpg",
+        "from": "Αλεποχώρι-Σπαρτιά/Αλεποχώρι-Δυτικό_ζωνάρι_πάνω.jpg"
+    },
+    {
+        "type": "LoadedResource",
+        "verbosity": "INFO",
+        "for": "pandocplot3063434925390231523.svg",
+        "from": "pandocplot3063434925390231523.svg"
+    },
+    {
+        "type": "LoadedResource",
+        "verbosity": "INFO",
+        "for": "pandocplot17629581737275297524.svg",
+        "from": "pandocplot17629581737275297524.svg"
+    },
+    {
+        "type": "LoadedResource",
+        "verbosity": "INFO",
+        "for": "pandocplot13391201009440879570.svg",
+        "from": "pandocplot13391201009440879570.svg"
+    },
+    {
+        "type": "LoadedResource",
+        "verbosity": "INFO",
+        "for": "pandocplot15878170671745446606.svg",
+        "from": "pandocplot15878170671745446606.svg"
+    },
+    {
+        "type": "LoadedResource",
+        "verbosity": "INFO",
+        "for": "Καλόγρια-Παναγία-τοπίο.jpg",
+        "from": "Καλόγρια/Καλόγρια-Παναγία-τοπίο.jpg"
+    },
+    {
+        "type": "LoadedResource",
+        "verbosity": "INFO",
+        "for": "Καλόγρια-πανοραμική.jpg",
+        "from": "Καλόγρια/Καλόγρια-πανοραμική.jpg"
+    },
+    {
+        "type": "LoadedResource",
+        "verbosity": "INFO",
+        "for": "pandocplot3332473116345129825.svg",
+        "from": "pandocplot3332473116345129825.svg"
+    },
+    {
+        "type": "LoadedResource",
+        "verbosity": "INFO",
+        "for": "Καλόγρια-οδηγίες.jpg",
+        "from": "Καλόγρια/Καλόγρια-οδηγίες.jpg"
+    },
+    {
+        "type": "LoadedResource",
+        "verbosity": "INFO",
+        "for": "Καλόγρια-Μεγάλος-Τοίχος.jpg",
+        "from": "Καλόγρια/Καλόγρια-Μεγάλος-Τοίχος.jpg"
+    },
+    {
+        "type": "LoadedResource",
+        "verbosity": "INFO",
+        "for": "pandocplot16527515934273968159.svg",
+        "from": "pandocplot16527515934273968159.svg"
+    },
+    {
+        "type": "LoadedResource",
+        "verbosity": "INFO",
+        "for": "Καλόγρια-Γαλάζιο-Όνειρο.jpg",
+        "from": "Καλόγρια/Καλόγρια-Γαλάζιο-Όνειρο.jpg"
+    },
+    {
+        "type": "LoadedResource",
+        "verbosity": "INFO",
+        "for": "pandocplot17907093328566755562.svg",
+        "from": "pandocplot17907093328566755562.svg"
+    },
+    {
+        "type": "LoadedResource",
+        "verbosity": "INFO",
+        "for": "Καλόγρια-Παναγιά.jpg",
+        "from": "Καλόγρια/Καλόγρια-Παναγιά.jpg"
+    },
+    {
+        "type": "LoadedResource",
+        "verbosity": "INFO",
+        "for": "pandocplot8063197634586820287.svg",
+        "from": "pandocplot8063197634586820287.svg"
+    },
+    {
+        "type": "LoadedResource",
+        "verbosity": "INFO",
+        "for": "Καλόγρια-Σπηλιά-των-Τεράτων.jpg",
+        "from": "Καλόγρια/Καλόγρια-Σπηλιά-των-Τεράτων.jpg"
+    },
+    {
+        "type": "LoadedResource",
+        "verbosity": "INFO",
+        "for": "pandocplot9055423068207406007.svg",
+        "from": "pandocplot9055423068207406007.svg"
+    },
+    {
+        "type": "LoadedResource",
+        "verbosity": "INFO",
+        "for": "Καλόγρια-Σχολείο-2.jpg",
+        "from": "Καλόγρια/Καλόγρια-Σχολείο-2.jpg"
+    },
+    {
+        "type": "LoadedResource",
+        "verbosity": "INFO",
+        "for": "pandocplot10708120693445262832.svg",
+        "from": "pandocplot10708120693445262832.svg"
+    },
+    {
+        "type": "LoadedResource",
+        "verbosity": "INFO",
+        "for": "Καλόγρια-Πρόκοπος-αριστερά-1.jpg",
+        "from": "Καλόγρια/Καλόγρια-Πρόκοπος-αριστερά-1.jpg"
+    },
+    {
+        "type": "LoadedResource",
+        "verbosity": "INFO",
+        "for": "Καλόγρια-Πρόκοπος-αριστερά-2.jpg",
+        "from": "Καλόγρια/Καλόγρια-Πρόκοπος-αριστερά-2.jpg"
+    },
+    {
+        "type": "LoadedResource",
+        "verbosity": "INFO",
+        "for": "pandocplot17311945559189586444.svg",
+        "from": "pandocplot17311945559189586444.svg"
+    },
+    {
+        "type": "LoadedResource",
+        "verbosity": "INFO",
+        "for": "Καλόγρια-Σπάδωνες.jpg",
+        "from": "Καλόγρια/Καλόγρια-Σπάδωνες.jpg"
+    },
+    {
+        "type": "LoadedResource",
+        "verbosity": "INFO",
+        "for": "pandocplot13307133944798518231.svg",
+        "from": "pandocplot13307133944798518231.svg"
+    },
+    {
+        "type": "LoadedResource",
+        "verbosity": "INFO",
+        "for": "Καλόγρια-Αυστριακών.jpg",
+        "from": "Καλόγρια/Καλόγρια-Αυστριακών.jpg"
+    },
+    {
+        "type": "LoadedResource",
+        "verbosity": "INFO",
+        "for": "pandocplot6157607001131829647.svg",
+        "from": "pandocplot6157607001131829647.svg"
+    },
+    {
+        "type": "LoadedResource",
+        "verbosity": "INFO",
+        "for": "pandocplot9758155490801435482.svg",
+        "from": "pandocplot9758155490801435482.svg"
+    },
+    {
+        "type": "LoadedResource",
+        "verbosity": "INFO",
+        "for": "Κλεισούρα-οδηγίες.jpg",
+        "from": "Κλεισούρα/Κλεισούρα-οδηγίες.jpg"
+    },
+    {
+        "type": "LoadedResource",
+        "verbosity": "INFO",
+        "for": "pandocplot205749383121502718.svg",
+        "from": "pandocplot205749383121502718.svg"
+    },
+    {
+        "type": "LoadedResource",
+        "verbosity": "INFO",
+        "for": "pandocplot6892190132012589721.svg",
+        "from": "pandocplot6892190132012589721.svg"
+    },
+    {
+        "type": "LoadedResource",
+        "verbosity": "INFO",
+        "for": "Πόρτες-οδηγίες.jpg",
+        "from": "Πόρτες (Νεραϊδότρυπα)/Πόρτες-οδηγίες.jpg"
+    },
+    {
+        "type": "LoadedResource",
+        "verbosity": "INFO",
+        "for": "pandocplot8193978093973519276.svg",
+        "from": "pandocplot8193978093973519276.svg"
+    },
+    {
+        "type": "LoadedResource",
+        "verbosity": "INFO",
+        "for": "Πόρτες - Τοίχος αριστερά.jpg",
+        "from": "Πόρτες (Νεραϊδότρυπα)/Πόρτες - Τοίχος αριστερά.jpg"
+    },
+    {
+        "type": "LoadedResource",
+        "verbosity": "INFO",
+        "for": "pandocplot14150455974725710851.svg",
+        "from": "pandocplot14150455974725710851.svg"
+    },
+    {
+        "type": "LoadedResource",
+        "verbosity": "INFO",
+        "for": "pandocplot3093111375938779728.svg",
+        "from": "pandocplot3093111375938779728.svg"
+    },
+    {
+        "type": "LoadedResource",
+        "verbosity": "INFO",
+        "for": "Χατζούρι-πανοραμική.jpg",
+        "from": "Χατζούρι/Χατζούρι-πανοραμική.jpg"
+    },
+    {
+        "type": "LoadedResource",
+        "verbosity": "INFO",
+        "for": "pandocplot5382083013757594486.svg",
+        "from": "pandocplot5382083013757594486.svg"
+    },
+    {
+        "type": "LoadedResource",
+        "verbosity": "INFO",
+        "for": "Χατζούρι-οδηγίες.jpg",
+        "from": "Χατζούρι/Χατζούρι-οδηγίες.jpg"
+    },
+    {
+        "type": "LoadedResource",
+        "verbosity": "INFO",
+        "for": "pandocplot14750843892597845775.svg",
+        "from": "pandocplot14750843892597845775.svg"
+    },
+    {
+        "type": "LoadedResource",
+        "verbosity": "INFO",
+        "for": "pandocplot18103516519314829608.svg",
+        "from": "pandocplot18103516519314829608.svg"
+    },
+    {
+        "type": "LoadedResource",
+        "verbosity": "INFO",
+        "for": "pandocplot13306290114795906538.svg",
+        "from": "pandocplot13306290114795906538.svg"
+    },
+    {
+        "type": "LoadedResource",
+        "verbosity": "INFO",
+        "for": "pandocplot13052013553284058144.svg",
+        "from": "pandocplot13052013553284058144.svg"
+    },
+    {
+        "type": "LoadedResource",
+        "verbosity": "INFO",
+        "for": "Χατζούρι-3.jpg",
+        "from": "Χατζούρι/Χατζούρι-3.jpg"
+    },
+    {
+        "type": "BlockNotRendered",
+        "verbosity": "INFO",
+        "contents": {
+            "c": [
+                "latex",
+                "\\usepackage{cleveref}\n\\usepackage{caption}\n% pandoc-fignos: change the caption name\n\\renewcommand{\\figurename}{Εικόνα}"
+            ],
+            "t": "RawBlock"
+        }
+    },
+    {
+        "type": "InlineNotRendered",
+        "verbosity": "INFO",
+        "contents": {
+            "c": [
+                "tex",
+                "\\leftmark"
+            ],
+            "t": "RawInline"
+        }
+    },
+    {
+        "type": "InlineNotRendered",
+        "verbosity": "INFO",
+        "contents": {
+            "c": [
+                "tex",
+                "\\hspace{1cm}"
+            ],
+            "t": "RawInline"
+        }
+    }
+]
