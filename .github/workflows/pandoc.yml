@@ -2,7 +2,7 @@ name: Pandoc
 
 on: push
     # tags-ignore:
-    #   - 'not-release'
+    #   - 'not-release' 
 
 jobs:
   convert_via_pandoc:
