@@ -1,0 +1,2 @@
+[Άδεια χρήσης CC BY_NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode.el)
+<!-- [![CC BY_NC-SA 4.0 / Αναφορά Δημιουργού - Μη Εμπορική Χρήση - Παρόμοια Διανομή 4.0 Διεθνές](https://mirrors.creativecommons.org/presskit/buttons/88x31/png/by-nc-sa.png 'CC BY_NC-SA 4.0 - Αναφορά Δημιουργού - Μη Εμπορική Χρήση - Παρόμοια Διανομή 4.0 Διεθνές')](https://creativecommons.org/licenses/by-nc-sa/4.0/) -->

@@ -236,6 +236,20 @@ RUN apt-get -qy download --no-install-recommends texlive-fonts-extra
 # cd ..
 # rm -rf fontdownload
 
+## HOW TO INSTALL ONLY fontwesome.sty
+# mkdir fontdownload
+# cd fontdownload
+
+# sudo apt-get download texlive-fonts-extra
+
+# dpkg -x texlive-fonts-extra_2019.202000218-1_all.deb ./
+
+# sudo mkdir -p /usr/share/texlive/texmf-dist/tex/latex/fontawesome/
+# sudo cp -v ./usr/share/texlive/texmf-dist/tex/latex/fontawesome/fontawesome.sty /usr/share/texlive/texmf-dist/tex/latex/fontawesome/fontawesome.sty
+
+# cd ..
+# rm -rf fontdownload
+
 RUN mkdir /pandoc
 VOLUME /pandoc
 WORKDIR /pandoc

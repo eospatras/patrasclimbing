@@ -56,12 +56,12 @@ caption-justification: centering # see caption package docs
 caption-labelformat: original # see caption package docs
 geometry: [a4paper, bindingoffset=10mm, inner=20mm, outer=20mm, top=20mm, bottom=20mm] # See https://ctan.org/pkg/geometry for more options
 
-# pandoc-latex-environment:
-#     noteblock: [note]
-#     tipblock: [tip]
-#     warningblock: [warning]
-#     cautionblock: [caution]
-#     importantblock: [important]
+pandoc-latex-environment:
+    noteblock: [note]
+    tipblock: [tip]
+    warningblock: [warning]
+    cautionblock: [caution]
+    importantblock: [important]
 listings-disable-line-numbers: false
 disable-header-and-footer: false
 header-left: "\\leftmark"

@@ -9,7 +9,7 @@ metadata:
 
 file-scope: false # Parse each file individually before combining for multifile documents. This will allow footnotes in different files with the same identifiers to work as expected. If this option is set, footnotes and links will not work across files.
 from: markdown
-input-files: [conf/0-frontmatter.md, 'Αλεποχώρι-Σπαρτιά/Αλεποχώρι-Σπαρτιά.md', 'Καλόγρια/Καλόγρια.md', 'Κλεισούρα/Κλεισούρα.md', 'Πόρτες (Νεραϊδότρυπα)/Πόρτες (Νεραϊδότρυπα).md', 'Χατζούρι/Χατζούρι.md']
+input-files: [conf/0-frontmatter.md, conf/html-preamble.md, 'Αλεποχώρι-Σπαρτιά/Αλεποχώρι-Σπαρτιά.md', 'Καλόγρια/Καλόγρια.md', 'Κλεισούρα/Κλεισούρα.md', 'Πόρτες (Νεραϊδότρυπα)/Πόρτες (Νεραϊδότρυπα).md', 'Χατζούρι/Χατζούρι.md']
 resource-path: ['Αλεποχώρι-Σπαρτιά', 'Καλόγρια', 'Κλεισούρα', 'Πόρτες (Νεραϊδότρυπα)', 'Χατζούρι']
 output-file: docs/index.html
 log-file: log/html.log.json
