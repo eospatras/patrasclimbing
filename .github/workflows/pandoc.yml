@@ -41,7 +41,7 @@ jobs:
         cp templates/pandoc-markdown-css-theme/MonaspaceNeon-Regular.woff ./docs
         git add -f docs/*
         git commit -m "Add generated HTML page"
-        git remote set-url origin git@github.com:eospatras/patrasclimbing.git
+        git remote set-url origin https://${{ secrets.GITHUB_TOKEN }}@github.com/eospatras/patrasclimbing.git
         git push origin HEAD:main
     - name: Deploy to GitHub Pages
       uses: peaceiris/actions-gh-pages@v3
