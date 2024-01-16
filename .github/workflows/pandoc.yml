@@ -1,59 +1,58 @@
 name: Pandoc
 
 on: push
-    # tags-ignore:
-    #   - 'not-release' 
+# tags-ignore:
+#   - 'not-release' 
 
 jobs:
   convert_via_pandoc:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+    - uses: actions/checkout@v2
 
-      # - name: Create docs directory
-      #   run: mkdir -p docs/
+    # - name: Create docs directory
+    #   run: mkdir -p docs/
 
-      # - name: Create pdf
-      #   id: create-pdf
-      #   uses: docker://sintoris/texlive:routes
-      #   with:
-      #     args: >-
-      #       --defaults=conf/pdf.yaml
-      #       -N -f markdown-implicit_figures 
-      
-      - name: Create docs directory
-        run: mkdir -p docs
-            
-      - name: Create html
-        id: create-html
-        uses: docker://sintoris/texlive:routes
-        with:
-          args: >-
-            --defaults=conf/html.yaml
-            -N -f markdown-implicit_figures --toc
-      
-      - name: Push to GitHub
-        run: |
-          mv *.svg docs
-          rm *.src.html
-          cp Αλεποχώρι-Σπαρτιά/*.jpg ./docs
-          cp Καλόγρια/*.jpg ./docs
-          cp Κλεισούρα/*.jpg ./docs
-          cp "Πόρτες (Νεραϊδότρυπα)"/*.jpg ./docs
-          cp Χατζούρι/*.jpg ./docs
-          cp templates/pandoc-markdown-css-theme/theme.css ./docs
-          cp templates/pandoc-markdown-css-theme/MonaspaceNeon-Regular.woff ./docs
-          git config --local user.email "action@github.com"
-          git config --local user.name "GitHub Action"
-          git add -f docs/*
-          git commit -m "Add generated HTML page"
-          git push
+    # - name: Create pdf
+    #   id: create-pdf
+    #   uses: docker://sintoris/texlive:routes
+    #   with:
+    #     args: >-
+    #       --defaults=conf/pdf.yaml
+    #       -N -f markdown-implicit_figures 
 
-      - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v3
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./docs
+    - name: Create docs directory
+      run: mkdir -p docs
+
+    - name: Create html
+      id: create-html
+      uses: docker://sintoris/texlive:routes
+      with:
+        args: >-
+          --defaults=conf/html.yaml -N -f markdown-implicit_figures --toc #magic___^_^___line #magic___^_^___line
+
+    - name: Push to GitHub
+      run: |
+        git config --global user.name 'github-actions[bot]'
+        git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+        mv *.svg docs
+        rm *.src.html
+        cp Αλεποχώρι-Σπαρτιά/*.jpg ./docs
+        cp Καλόγρια/*.jpg ./docs
+        cp Κλεισούρα/*.jpg ./docs
+        cp "Πόρτες (Νεραϊδότρυπα)"/*.jpg ./docs
+        cp Χατζούρι/*.jpg ./docs
+        cp templates/pandoc-markdown-css-theme/theme.css ./docs
+        cp templates/pandoc-markdown-css-theme/MonaspaceNeon-Regular.woff ./docs
+        git add -f docs/*
+        git commit -m "Add generated HTML page"
+        git push
+
+    - name: Deploy to GitHub Pages
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: ./docs
 
 
 
