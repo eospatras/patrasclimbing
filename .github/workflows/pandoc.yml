@@ -8,13 +8,13 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
-    # - name: Create pdf
-    #   id: create-pdf
-    #   uses: docker://sintoris/texlive:routes
-    #   with:
-    #     args: >-
-    #       --defaults=conf/pdf.yaml
-    #       -N -f markdown-implicit_figures 
+    - name: Create pdf
+      id: create-pdf
+      uses: docker://sintoris/texlive:routes
+      with:
+        args: >-
+          --defaults=conf/pdf.yaml
+          -N -f markdown-implicit_figures 
     - name: Create docs directory
       # - name: Create docs directory
       #   run: mkdir -p docs/
@@ -26,7 +26,7 @@ jobs:
       with:
         args: >-
           --defaults=conf/html.yaml -N -f markdown-implicit_figures --toc
-          
+
     - name: Push to GitHub
       run: |
         git config --global user.name 'github-actions[bot]'
