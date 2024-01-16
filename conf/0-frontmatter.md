@@ -1,6 +1,6 @@
 ---
 title: Πάτρα - Αναρριχητικός οδηγός
-author: ΕΟΣ Πατρών
+author: ΕΟΣ Πατρών και φίλοι
 
 keywords:
     - Climbing
