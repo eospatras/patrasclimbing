@@ -1,5 +1,4 @@
 name: Pandoc
-
 on: push
 # tags-ignore:
 #   - 'not-release' 
@@ -9,10 +8,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
-
-    # - name: Create docs directory
-    #   run: mkdir -p docs/
-
     # - name: Create pdf
     #   id: create-pdf
     #   uses: docker://sintoris/texlive:routes
@@ -20,17 +15,17 @@ jobs:
     #     args: >-
     #       --defaults=conf/pdf.yaml
     #       -N -f markdown-implicit_figures 
-
     - name: Create docs directory
-      run: mkdir -p docs
+      # - name: Create docs directory
+      #   run: mkdir -p docs/
 
+      run: mkdir -p docs
     - name: Create html
       id: create-html
       uses: docker://sintoris/texlive:routes
       with:
         args: >-
-          --defaults=conf/html.yaml -N -f markdown-implicit_figures --toc #magic___^_^___line #magic___^_^___line
-
+          --defaults=conf/html.yaml -N -f markdown-implicit_figures --toc
     - name: Push to GitHub
       run: |
         git config --global user.name 'github-actions[bot]'
@@ -47,13 +42,8 @@ jobs:
         git add -f docs/*
         git commit -m "Add generated HTML page"
         git push
-
     - name: Deploy to GitHub Pages
       uses: peaceiris/actions-gh-pages@v3
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
         publish_dir: ./docs
-
-
-
-
