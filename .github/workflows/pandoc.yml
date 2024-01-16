@@ -26,6 +26,7 @@ jobs:
       with:
         args: >-
           --defaults=conf/html.yaml -N -f markdown-implicit_figures --toc
+          
     - name: Push to GitHub
       run: |
         git config --global user.name 'github-actions[bot]'
