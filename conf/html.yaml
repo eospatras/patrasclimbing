@@ -4,7 +4,7 @@ filters:
 
 metadata:
   title: Πάτρα - Αναρριχητικός Οδηγός
-  author: ΕΟΣ Πατρών
+  author: ΕΟΣ Πατρών και φίλοι
 
 
 file-scope: false # Parse each file individually before combining for multifile documents. This will allow footnotes in different files with the same identifiers to work as expected. If this option is set, footnotes and links will not work across files.
