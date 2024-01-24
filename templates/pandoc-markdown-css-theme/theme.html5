@@ -31,7 +31,29 @@ $endfor$
 $for(include-before)$
 $include-before$
 $endfor$
-
+<script>
+window.addEventListener('scroll', function() {
+  var hash;
+  var sections = document.querySelectorAll('[data-number]');
+  for (var i = 0; i < sections.length; i++) {
+    var section = sections[i];
+    if (section.getBoundingClientRect().top < window.innerHeight / 2) {
+      hash = '#' + section.id;
+    }
+  }
+  if (hash) {
+    var links = document.querySelectorAll('a');
+    for (var i = 0; i < links.length; i++) {
+      var link = links[i];
+      if (link.getAttribute('href') === hash) {
+        link.classList.add('current');
+      } else {
+        link.classList.remove('current');
+      }
+    }
+  }
+});
+</script>
 <header>
 <h1 class="title">$title$</h1>
 <blockquote class="metadata">
